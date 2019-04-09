@@ -1,0 +1,101 @@
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+
+  <app-header></app-header>
+
+  <div class="app-body">
+    <app-sidebar></app-sidebar>
+
+    <main class="main" *ngIf="isActiveTrigger1 == 1">
+      <div class="card">
+        <div class="card-header">
+          <strong>Facebook Settings 1</strong></div>
+        <div class="card-body">
+          <form [formGroup]="form" (ngSubmit)="facebook1()">
+            <input class="form-control" id="prependedInput" type="text" placeholder="Enter your city here"
+              formControlName="city">
+            <button class="btn btn-brand btn-sm btn-spotify" type="submit" style="margin: 10px 20px;">
+              <span>Activer</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <main class="main" *ngIf="isActiveTrigger2 == 1">
+      <div class="card">
+        <div class="card-header">
+          <strong>Facebook Settings 2</strong></div>
+        <div class="card-body">
+          <form [formGroup]="form" (ngSubmit)="facebook2()">
+            <input class="form-control" id="prependedInput" type="text" placeholder="Enter your streamer here"
+              formControlName="city">
+            <button class="btn btn-brand btn-sm btn-spotify" type="submit" style="margin: 10px 20px;">
+              <span>Activer</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <main class="main" *ngIf="isActiveTrigger3 == 1">
+      <div class="card">
+        <div class="card-header">
+          <strong>Facebook Settings 3</strong></div>
+        <div class="card-body">
+          <form [formGroup]="form" (ngSubmit)="facebook3()">
+            <input class="form-control" id="prependedInput" type="email" placeholder="Enter your email here"
+              formControlName="city">
+            <button class="btn btn-brand btn-sm btn-spotify" type="submit" style="margin: 10px 20px;">
+              <span>Activer</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <main class="main" *ngIf="isActiveTrigger4 == 1">
+      <div class="card">
+        <div class="card-header">
+          <strong>Facebook Settings 4</strong></div>
+        <div class="card-body">
+          <div class="clearfix">
+            <img class="float-left display-3 mr-4" src="../../../assets/facebook_logo.png" width="100">
+            <h2 class="pt-3">Like the last post of your page</h2>
+            <img src="../../../assets/like.png">
+          </div>
+          <button (click)="facebook4()" class="btn btn-brand btn-sm btn-spotify" type="submit"
+            style="margin: 10px 0 20px 0; text-align: center;">
+            <span>Activer</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <main class="main" *ngIf="isActiveTrigger5 == 1">
+      <div class="card">
+        <div class="card-header">
+          <strong>Facebook Settings 5</strong></div>
+        <div class="card-body">
+          <div class="clearfix">
+            <img class="float-left display-3 mr-4" src="../../../assets/facebook_logo.png" width="100">
+            <h2 class="pt-3">Comment automatically the last post of your page</h2>
+            <img src="../../../assets/comment.png">
+          </div>
+          <button (click)="facebook5()" class="btn btn-brand btn-sm btn-spotify" type="submit"
+            style="margin: 10px 0 20px 0; text-align: center;">
+            <span>Activer</span>
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+  <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+  <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+  <script src="asset/main.js"></script>
+</body>

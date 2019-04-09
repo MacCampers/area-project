@@ -1,0 +1,47 @@
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+
+    <app-header></app-header>
+  
+    <div class="app-body">
+      <app-sidebar></app-sidebar>    
+  
+      <main class="main">
+          <div class="card">
+              <form [formGroup]="form" (ngSubmit)="updatePassword()">
+              <div class="card-header">
+                <strong>Change Password</strong></div>
+              <div class="card-body">
+                  <div class="form-group">
+                    <label for="nf-email">Email</label>
+                    <input class="form-control" type="text" placeholder="{{ (authService.user$ | async)?.email }}" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="nf-password">New Password</label>
+                    <input class="form-control"  type="password"  placeholder="Enter Password.." formControlName="password">
+                  </div>
+                  <div class="form-group">
+                      <label for="nf-password">Confirm Password</label>
+                      <input class="form-control" type="password" placeholder="Confirm Password.." >
+                    </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-sm btn-primary" type="submit">
+                  <i class="fa fa-dot-circle-o"></i> Submit</button>
+              </div>
+              </form>
+            </div>
+      </main>
+  
+  
+    </div>
+  
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+    <script src="asset/main.js"></script>
+  
+  </body>

@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "983619226651",
+    "firebase_url": "https://epitechdashboard.firebaseio.com",
+    "project_id": "epitechdashboard",
+    "storage_bucket": "epitechdashboard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983619226651:android:85949c0fe2f906b7",
+        "android_client_info": {
+          "package_name": "com.area"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983619226651-njtlm5c772809bkrlf9rl86d46g59gvs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.area",
+            "certificate_hash": "c02a16b0f372fae5127322a4d3a7a3ff3d3d8649"
+          }
+        },
+        {
+          "client_id": "983619226651-ckthl4lndila9pt79unaqtqqgl9gdlvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJbyzM42OsAxtlUKv_-RzWR3IblfQCKb8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983619226651-ckthl4lndila9pt79unaqtqqgl9gdlvk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "983619226651-g9ku741p4kf3du6je230eiopqg5sclfb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.reactjs.native.Area"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,150 @@
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+
+  <app-header></app-header>
+
+  <div class="app-body">
+    <app-sidebar></app-sidebar>
+
+    <main class="main">
+      <div class="container-fluid">
+        <div class="animated fadeIn">
+
+          <div class="card text-white bg-primary p-4 d-md-down-none" *ngIf="JwtToken == 0">
+            <div class="card-body text-center">
+              <div>
+                <form #f="ngForm" (ngSubmit)="registerUser()">
+                  <h1 style="margin-bottom:30px;">Please valid your inscription with a valid email and password to
+                    continue</h1>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="icon-user"></i>
+                      </span>
+                    </div>
+                    <input class="form-control" type="text" name="username" placeholder="Email"
+                      [(ngModel)]="newUser.username">
+                  </div>
+                  <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="icon-lock"></i>
+                      </span>
+                    </div>
+                    <input class="form-control" type="password" name="password" placeholder="Password"
+                      [(ngModel)]="newUser.password">
+                  </div>
+                  <button class="btn btn-primary active px-4" type="submit"
+                    (click)="authService.sendEmailVerification()">Register
+                    Now!</button>
+                  <p *ngIf="errorCreate$ != 0" style="color:red; margin-top:10px;">{{ errorCreate$ }}</p>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="row"
+            *ngIf="isActiveWeather == 0 && isActiveTwitch == 0 && isActiveYoutube == 0 && isActiveFacebook == 0 && isActiveTwitter == 0">
+            <div>
+              <h4 class="pt-3">Oops! No Applets yet ?</h4>
+              <p class="text-muted">Go to the Applets tab to activate the applets you want.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div *ngIf="isActiveWeather == 1" class="col-sm-6 col-lg-3">
+              <app-weather></app-weather>
+            </div>
+            <div *ngIf="isActiveWeather == 1" class="col-sm-6 col-lg-3">
+              <app-weather2></app-weather2>
+            </div>
+            <div *ngIf="isActiveWeather == 1" class="col-sm-6 col-lg-3">
+              <app-weather3></app-weather3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div *ngIf="isActiveTwitch == 1" class="col-sm-6 col-lg-3">
+              <app-twitch1></app-twitch1>
+            </div>
+
+            <div *ngIf="isActiveTwitch == 1" class="col-sm-6 col-lg-3">
+              <app-twitch2></app-twitch2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div *ngIf="isActiveFacebook == 1" class="col-sm-6 col-lg-3">
+              <app-facebook3></app-facebook3>
+            </div>
+
+            <div *ngIf="isActiveFacebook == 1" class="col-sm-6 col-lg-3">
+              <app-facebook4></app-facebook4>
+            </div>
+
+            <div *ngIf="isActiveFacebook == 1" class="col-sm-6 col-lg-3">
+              <app-facebook5></app-facebook5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div *ngIf="isActiveGithub == 1" class="col-sm-6 col-lg-3">
+              <app-github1></app-github1>
+            </div>
+
+            <div *ngIf="isActiveGithub == 1" class="col-sm-6 col-lg-3">
+              <app-github6></app-github6>
+            </div>
+          </div>
+
+          <div class="row">
+            <div *ngIf="isActiveGithub == 1 && isActiveTwitter == 1" class="col-sm-6 col-lg-3">
+              <app-github2></app-github2>
+            </div>
+
+            <div *ngIf="isActiveGithub == 1 && isActiveTwitter == 1" class="col-sm-6 col-lg-3">
+                <app-github4></app-github4>
+              </div>
+
+            <div *ngIf="isActiveGithub == 1 && isActiveFacebook == 1" class="col-sm-6 col-lg-3">
+              <app-github3></app-github3>
+            </div>
+
+            <div *ngIf="isActiveGithub == 1 && isActiveFacebook == 1" class="col-sm-6 col-lg-3">
+                <app-github5></app-github5>
+              </div>
+            </div>
+
+          <div class="row">
+            <div *ngIf="isActiveFacebook == 1 && isActiveWeather == 1" class="col-sm-6 col-lg-3">
+              <app-facebook1></app-facebook1>
+            </div>
+
+            <div *ngIf="isActiveWeather == 1 && isActiveTwitter == 1" class="col-sm-6 col-lg-3">
+              <app-twitter1></app-twitter1>
+            </div>
+
+            <div *ngIf="isActiveTwitter == 1 && isActiveTwitch == 1" class="col-sm-6 col-lg-3">
+                <app-twitter2></app-twitter2>
+              </div>
+  
+            <div *ngIf="isActiveFacebook == 1 && isActiveTwitch == 1" class="col-sm-6 col-lg-3">
+              <app-facebook2></app-facebook2>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+  <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+  <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+  <script src="asset/main.js"></script>
+
+</body>

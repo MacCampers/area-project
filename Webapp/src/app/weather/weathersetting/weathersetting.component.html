@@ -1,0 +1,62 @@
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+
+  <app-header></app-header>
+
+  <div class="app-body">
+    <app-sidebar></app-sidebar>
+
+    <main class="main" *ngIf="isActiveTrigger1 == 1">
+      <div class="card">
+        <div class="card-header">
+          <strong>Weather Settings 1</strong></div>
+        <div class="card-body">
+          <form [formGroup]="form" (ngSubmit)="city1()">
+            <input class="form-control" id="prependedInput" type="text" placeholder="Enter your city here" formControlName="city">
+            <button class="btn btn-brand btn-sm btn-spotify" type="submit" style="margin: 10px 20px;">
+              <span>Activer</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <main class="main" *ngIf="isActiveTrigger2 == 1">
+      <div class="card">
+        <div class="card-header">
+          <strong>Weather Settings 2</strong></div>
+        <div class="card-body">
+          <form [formGroup]="form" (ngSubmit)="city2()">
+            <input class="form-control" id="prependedInput" type="text" placeholder="Enter your city here" formControlName="city">
+            <button class="btn btn-brand btn-sm btn-spotify" type="submit" style="margin: 10px 20px;">
+              <span>Activer</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <main class="main" *ngIf="isActiveTrigger3 == 1">
+      <div class="card">
+        <div class="card-header">
+          <strong>Weather Settings 3</strong></div>
+        <div class="card-body">
+          <form [formGroup]="form" (ngSubmit)="city3()">
+            <input class="form-control" id="prependedInput" type="text" placeholder="Enter your city here" formControlName="city">            
+            <button class="btn btn-brand btn-sm btn-spotify" type="submit" style="margin: 10px 20px;">
+              <span>Activer</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+  <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+  <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+  <script src="asset/main.js"></script>
+</body>

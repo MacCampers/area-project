@@ -1,0 +1,36 @@
+<header class="app-header navbar">
+  <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a (click)="dashboardPage()" class="navbar-brand">
+    <img src="src/assets/logo.png" alt="Dashboard" width="50">
+  </a>
+  <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <ul class="nav navbar-nav d-md-down-none">
+    <li class="nav-item px-3">
+      <a style="cursor: pointer;" class="nav-link" (click)="dashboardPage()">Home</a>
+    </li>
+    <li class="nav-item px-3">
+      <a style="cursor: pointer;" class="nav-link" (click)="settingPage()">Settings</a>
+    </li>
+  </ul>
+
+  <ul class="nav navbar-nav ml-auto">
+    <li class="nav-item dropdown">
+      <a class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        <a style="margin-right: 10px;cursor: pointer;" *ngIf="authService.user$ | async">connecté en tant que {{ (authService.user$ | async)?.email }}</a> 
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <a style="cursor: pointer;" class="dropdown-item" (click)="settingPage()">
+          <i class="fa fa-wrench"></i> Settings
+        </a>
+        <div class="divider"></div>
+        <a style="cursor: pointer;" (click)="logoutUser()" class="dropdown-item">
+          <i class="fa fa-lock"></i> Logout
+        </a>
+      </div>
+    </li>
+  </ul>
+</header>

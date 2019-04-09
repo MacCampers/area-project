@@ -1,0 +1,208 @@
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+  <app-header></app-header>
+
+  <div class="app-body">
+    <app-sidebar></app-sidebar>
+
+    <main class="main">
+      <div class="container-fluid">
+        <div class="animated fadeIn">
+
+          <div class="row">
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="brand-card">
+                <div class="brand-card-header bg-sun">
+                  <img src="../../assets/weather.png" width="50">
+                </div>
+                <div class="brand-card-body">
+                  <div>
+                    <button (click)="activateWeather()" class="btn btn-brand btn-sm btn-spotify" type="button"
+                      style="margin-top: 10px;">
+                      <span>Activer</span>
+                    </button>
+                  </div>
+                  <div>
+                    <button (click)="desactivateWeather()" class="btn btn-brand btn-sm white" type="button"
+                      style="margin-top: 10px; background-color:rgb(228, 78, 78);">
+                      <span>Desactiver</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="brand-card">
+                <div class="brand-card-header bg-twitter">
+                  <i class="fa fa-twitter"></i>
+                </div>
+                <div class="brand-card-body">
+                  <div>
+                    <button (click)="activateTwitter()" class="btn btn-brand btn-sm btn-spotify" type="button"
+                      style="margin-top: 10px;">
+                      <span>Activer</span>
+                    </button>
+                  </div>
+                  <div>
+                    <button (click)="desactivateTwitter()" class="btn btn-brand btn-sm white" type="button"
+                      style="margin-top: 10px; background-color:rgb(228, 78, 78);">
+                      <span>Desactiver</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="brand-card">
+                <div class="brand-card-header bg-facebook">
+                  <i class="fa fa-facebook"></i>
+                </div>
+                <div class="brand-card-body">
+                  <div>
+                    <button (click)="activateFacebook()" class="btn btn-brand btn-sm btn-spotify" type="button"
+                      style="margin-top: 10px;">
+                      <span>Activer</span>
+                    </button>
+                  </div>
+                  <div>
+                    <button (click)="desactivateFacebook()" class="btn btn-brand btn-sm white" type="button"
+                      style="margin-top: 10px; background-color:rgb(228, 78, 78);">
+                      <span>Desactiver</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!--
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="brand-card">
+                <div class="brand-card-header bg-google-plus">
+                  <i class="fa fa-google-plus"></i>
+                </div>
+                <div class="brand-card-body">
+                  <div>
+                    <button (click)="activateWeather()" class="btn btn-brand btn-sm btn-spotify" type="button"
+                      style="margin-top: 10px;">
+                      <span>Activer</span>
+                    </button>
+                  </div>
+                  <div>
+                    <button (click)="desactivateWeather()" class="btn btn-brand btn-sm white" type="button"
+                      style="margin-top: 10px; background-color:rgb(228, 78, 78);">
+                      <span>Desactiver</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="brand-card">
+                <div class="brand-card-header bg-linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </div>
+                <div class="brand-card-body">
+                  <div>
+                    <button (click)="activateWeather()" class="btn btn-brand btn-sm btn-spotify" type="button"
+                      style="margin-top: 10px;">
+                      <span>Activer</span>
+                    </button>
+                  </div>
+                  <div>
+                    <button (click)="desactivateWeather()" class="btn btn-brand btn-sm white" type="button"
+                      style="margin-top: 10px; background-color:rgb(228, 78, 78);">
+                      <span>Desactiver</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="brand-card">
+                <div class="brand-card-header bg-youtube">
+                  <i class="fa fa-google"></i>
+                </div>
+                <div class="brand-card-body">
+                  <div>
+                    <button (click)="activateYoutube()" class="btn btn-brand btn-sm btn-spotify" type="button"
+                      style="margin-top: 10px;">
+                      <span>Activer</span>
+                    </button>
+                  </div>
+                  <div>
+                    <button (click)="desactivateYoutube()" class="btn btn-brand btn-sm white" type="button"
+                      style="margin-top: 10px; background-color:rgb(228, 78, 78);">
+                      <span>Desactiver</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="brand-card">
+                <div class="brand-card-header bg-twitch">
+                  <i class="fa fa-twitch"></i>
+                </div>
+                <div class="brand-card-body">
+                  <div>
+                    <button (click)="activateTwitch()" class="btn btn-brand btn-sm btn-spotify" type="button"
+                      style="margin-top: 10px;">
+                      <span>Activer</span>
+                    </button>
+                  </div>
+                  <div>
+                    <button (click)="desactivateTwitch()" class="btn btn-brand btn-sm white" type="button"
+                      style="margin-top: 10px; background-color:rgb(228, 78, 78);">
+                      <span>Desactiver</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <div class="brand-card">
+                <div class="brand-card-header bg-github">
+                  <i class="fa fa-github"></i>
+                </div>
+                <div class="brand-card-body">
+                  <div>
+                    <button (click)="activateGithub()" class="btn btn-brand btn-sm btn-spotify" type="button"
+                      style="margin-top: 10px;">
+                      <span>Activer</span>
+                    </button>
+                  </div>
+                  <div>
+                    <button (click)="desactivateGithub()" class="btn btn-brand btn-sm white" type="button"
+                      style="margin-top: 10px; background-color:rgb(228, 78, 78);">
+                      <span>Desactiver</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+  <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+  <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+  <script src="asset/main.js"></script>
+
+</body>

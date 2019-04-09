@@ -1,0 +1,9 @@
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Core\bin\Debug\netcoreapp2.2\Area.Core.deps.json
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Core\bin\Debug\netcoreapp2.2\Area.Core.dll
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Core\obj\Debug\netcoreapp2.2\Area.Core.csprojAssemblyReference.cache
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Core\obj\Debug\netcoreapp2.2\Area.Core.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Core\obj\Debug\netcoreapp2.2\Area.Core.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Core\obj\Debug\netcoreapp2.2\Area.Core.AssemblyInfo.cs
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Core\bin\Debug\netcoreapp2.2\Area.Core.pdb
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Core\obj\Debug\netcoreapp2.2\Area.Core.dll
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Core\obj\Debug\netcoreapp2.2\Area.Core.pdb

@@ -1,0 +1,14 @@
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\bin\Release\netcoreapp2.2\Area.Data.deps.json
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\bin\Release\netcoreapp2.2\Area.Data.runtimeconfig.json
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\bin\Release\netcoreapp2.2\Area.Data.runtimeconfig.dev.json
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\bin\Release\netcoreapp2.2\Area.Data.dll
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\bin\Release\netcoreapp2.2\Area.Data.pdb
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\bin\Release\netcoreapp2.2\Area.Core.dll
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\bin\Release\netcoreapp2.2\Area.Core.pdb
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\obj\Release\netcoreapp2.2\Area.Data.csprojAssemblyReference.cache
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\obj\Release\netcoreapp2.2\Area.Data.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\obj\Release\netcoreapp2.2\Area.Data.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\obj\Release\netcoreapp2.2\Area.Data.AssemblyInfo.cs
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\obj\Release\netcoreapp2.2\Area.Data.csproj.CopyComplete
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\obj\Release\netcoreapp2.2\Area.Data.dll
+\\Mac\Home\Documents\Epitech\Tek3\DEV\AREA\Area_api\Area.Data\obj\Release\netcoreapp2.2\Area.Data.pdb
